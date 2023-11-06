@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.div__location {
+  background-color: #EAEAEA;
+  color: #353535;
+  font-size: 11px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+}
+.div__location i {
+  margin-right: 20px;
+  font-size: 16px;
+}
+
+.section__reservez {
+  background-color: #F6F6F6;
+  width: 100%;
+  height: 300px;
+}
+.section__reservez h2 {
+  padding: 40px;
+  font-weight: 700;
+  text-align: center;
+}
+.section__reservez p {
+  margin-top: -30px;
+  margin-left: 20px;
+  text-align: center;
+  color: #353535;
+  font-size: 18px;
+  font-weight: lighter;
+}/*# sourceMappingURL=homepage.css.map */

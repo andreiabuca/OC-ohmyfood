@@ -7,11 +7,15 @@
     <title>Oh My Food</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Roboto:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="sass/homepage.css">
+    <link rel="stylesheet" href="sass/menu-la-français.css">
+    <link rel="stylesheet" href="sass/menu-la-note.css">
+    <link rel="stylesheet" href="sass/menu-la-palette.css">
 </head>
 
 <body>
@@ -20,18 +24,18 @@
     </div>
     <header>
 
-        <h1>ohmyfood</h1>
+        <img src="assets/logo.png" alt="Logo">
 
     </header>
 
-    <div>
+    <div class="div__location">
         <i class="fa-solid fa-location-dot"></i>
         <h2>Paris, Belleville</h2>
 
     </div>
 
     <main>
-        <section>
+        <section class="section__reservez">
             <h2>Réservez le menu qui <br>vous convient</h2>
             <p>Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
             <button>Explorer nos restaurants</button>
@@ -49,28 +53,29 @@
         <section>
             <h2>Restaurants</h2>
             <a href="#">
-                <img src="assets/la-palette.jpg" alt="Image du plat du restaurant">    <!-- Maybe insert img inside div -->
+                <img src="assets/la-palette.jpg" alt="Image du plat du restaurant"> <!-- Maybe insert img inside div -->
                 <div>
                     <h3>La palette du goût</h3>
                     <p>Ménilmontant</p>
                 </div>
             </a>
             <a href="#">
-                <img src="assets/la-note.jpg" alt="Image du plat du restaurant">    <!-- Maybe insert img inside div -->
+                <img src="assets/la-note.jpg" alt="Image du plat du restaurant"> <!-- Maybe insert img inside div -->
                 <div>
                     <h3>La note enchantée</h3>
                     <p>Charonne</p>
                 </div>
             </a>
             <a href="#">
-                <img src="assets/la-française.jpg" alt="Image du plat du restaurant">    <!-- Maybe insert img inside div -->
+                <img src="assets/la-française.jpg" alt="Image du plat du restaurant">
+                <!-- Maybe insert img inside div -->
                 <div>
                     <h3>À la française</h3>
                     <p>Cité Rouge</p>
                 </div>
             </a>
             <a href="#">
-                <img src="assets/le-delice.jpg" alt="Image du plat du restaurant">    <!-- Maybe insert img inside div -->
+                <img src="assets/le-delice.jpg" alt="Image du plat du restaurant"> <!-- Maybe insert img inside div -->
                 <div>
                     <h3>Le délice des sens</h3>
                     <p>Folie-Méricourt</p>
