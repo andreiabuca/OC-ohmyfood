@@ -7,7 +7,8 @@
     <title>Oh My Food</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Roboto:wght@300;400;500;700;900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope&family=Roboto:wght@300;400;500;700;900&family=Shrikhand&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
@@ -24,7 +25,9 @@
     </div>
     <header>
 
-        <img src="assets/logo.png" alt="Logo">
+        <h1>ohmyfood</h1>
+
+        <!-- <img src="assets/logo.png" alt="Logo"> -->
 
     </header>
 
@@ -43,42 +46,54 @@
 
         <section class="section__fonctionnement">
             <h2>Fonctionnement</h2>
-            <ol>
-                <li><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</li>
-                <li><i class="fas fa-list-ul"></i>Composez votre menu</li>
-                <li><i class="fas fa-store"></i>Dégustez au restaurant</li>
-            </ol>
+            <div>
+                </i><button></i><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</button>
+                </i><button></i><i class="fas fa-list-ul"></i>Composez votre menu</button>
+                </i><button></i><i class="fas fa-store" style="color:#9356DC"></i>Dégustez au restaurant</button>
+            </div>
         </section>
 
-        <section>
+        <section class="section__restaurants">
             <h2>Restaurants</h2>
             <a href="#">
-                <img src="assets/la-palette.jpg" alt="Image du plat du restaurant"> <!-- Maybe insert img inside div -->
-                <div>
-                    <h3>La palette du goût</h3>
-                    <p>Ménilmontant</p>
+                <div class="div__card-content">
+                    <img src="assets/la-palette.jpg" alt="Image du plat du restaurant">
+
+                    <div>
+                        <h3>La palette du goût</h3>
+                        <p>Ménilmontant</p>
+                    </div>
                 </div>
             </a>
             <a href="#">
-                <img src="assets/la-note.jpg" alt="Image du plat du restaurant"> <!-- Maybe insert img inside div -->
-                <div>
-                    <h3>La note enchantée</h3>
-                    <p>Charonne</p>
+                <div class="div__card-content">
+                    <img src="assets/la-note.jpg" alt="Image du plat du restaurant">
+
+                    <div>
+                        <h3>La note enchantée</h3>
+                        <p>Charonne</p>
+                    </div>
                 </div>
             </a>
             <a href="#">
-                <img src="assets/la-française.jpg" alt="Image du plat du restaurant">
-                <!-- Maybe insert img inside div -->
-                <div>
-                    <h3>À la française</h3>
-                    <p>Cité Rouge</p>
+                <div class="div__card-content">
+                    <img src="assets/la-française.jpg" alt="Image du plat du restaurant">
+
+
+                    <div>
+                        <h3>À la française</h3>
+                        <p>Cité Rouge</p>
+                    </div>
                 </div>
             </a>
             <a href="#">
-                <img src="assets/le-delice.jpg" alt="Image du plat du restaurant"> <!-- Maybe insert img inside div -->
-                <div>
-                    <h3>Le délice des sens</h3>
-                    <p>Folie-Méricourt</p>
+                <div class="div__card-content">
+                    <img src="assets/le-delice.jpg" alt="Image du plat du restaurant">
+
+                    <div>
+                        <h3>Le délice des sens</h3>
+                        <p>Folie-Méricourt</p>
+                    </div>
                 </div>
             </a>
         </section>
@@ -86,8 +101,8 @@
 
     <footer>
         <h2>ohmyfood</h2>
-        <p><i class="fas fa-utensils"></i>Proposer un restaurant</p>
-        <p><i class="fas fa-handshake-angle"></i>Devenir partenaire</p>
+        <p><i class="fas fa-utensils"></i><span>Proposer un restaurant</span></p>
+        <p><i class="fas fa-handshake-angle"></i><span>Devenir partenaire</span></p>
         <p>Mentions légales</p>
         <p>Contact</p>
     </footer>
