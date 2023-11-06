@@ -57,7 +57,7 @@ body {
 
 header {
   width: 100%;
-  height: 60px;
+  height: 70px;
 
   h1 {
     font-family: 'Shrikhand', serif;
@@ -71,6 +71,8 @@ header {
 .div__location {
   background-color: #EAEAEA;
   color: $text-grey;
+  border-top: 2px solid #EAEAEA; // work on the shadow
+  box-shadow: 0 -2px 5px rgba(0.0, 0.0, 0.0, 0.3); // work on the shadow
   font-size: 11px;
   display: inline-flex;
   justify-content: center;
