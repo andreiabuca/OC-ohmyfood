@@ -13,6 +13,9 @@ header {
 }
 header h1 {
   font-family: "Shrikhand", serif;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
 }
 
 .div__location {
@@ -23,11 +26,16 @@ header h1 {
   justify-content: center;
   align-items: center;
   width: 95%;
-  padding: 10px;
+  padding: 20px;
 }
 .div__location i {
-  margin-right: 20px;
+  margin-right: 15px;
+  margin-left: 20px;
   font-size: 16px;
+}
+.div__location h2 {
+  margin-right: 40px;
+  font-weight: 500;
 }
 
 .section__reservez {
