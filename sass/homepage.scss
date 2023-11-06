@@ -1,13 +1,22 @@
 $background-color: #F6F6F6;
+$primary-color-purple: #9356DC;
+$secundary-color-pink: #FF79DA;
+$tertiary-color-teal: #99E2D0;
 $font-family: 'Roboto', sans-serif;
 $text-grey: #353535;
+
 @mixin button-style {
-  border-radius: 10px solid;
-  border: none;
-  width: 50px;
-  height: 50px;
-  padding: 10px 20px;
+  border-radius: 39px;
+  padding: 13px 23px;
+  border-style: none;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  margin-top: 30px;
+  margin-left: 26%;
+  background-image: linear-gradient(to bottom, $secundary-color-pink, $primary-color-purple);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
+
 
 
 * {
@@ -39,22 +48,35 @@ body {
 .section__reservez {
   background-color: $background-color;
   width: 100%;
-  height: 300px;
+  height: 265px;
 
-    h2 {
-      padding: 40px;
-      font-weight: 700;
-      text-align: center;
-    }
+  h2 {
+    padding: 40px;
+    font-weight: 700;
+    text-align: center;
+  }
 
-    p {
-      margin-top: -30px;
-      margin-left: 20px;
-      text-align: center;
-      color: $text-grey;
-      font-size: 18px;
-      font-weight: lighter;
-    }
+  p {
+    margin-top: -30px;
+    margin-left: 20px;
+    text-align: center;
+    color: $text-grey;
+    font-size: 18px;
+    font-weight: lighter;
+  }
 
+  button {
+    @include button-style;
+  }
 
+}
+
+.section__fonctionnement {
+  width: 100%;
+  height: 400px;
+
+  h2 {
+    margin-top: 40px;
+    margin-left: 20px;
+  }
 }
