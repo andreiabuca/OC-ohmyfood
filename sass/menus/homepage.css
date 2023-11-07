@@ -73,33 +73,48 @@ header h1 {
 .section__fonctionnement {
   width: 100%;
   height: 360px;
+  counter-reset: steps;
 }
 .section__fonctionnement h2 {
   margin-top: 40px;
   margin-left: 20px;
 }
-.section__fonctionnement div {
+.section__fonctionnement ol {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 2rem;
   margin-top: 30px;
 }
-.section__fonctionnement button {
-  width: 90%;
-  padding: 23px;
-  margin-left: 18px;
+.section__fonctionnement li {
+  position: relative;
   display: flex;
-  border-radius: 20px;
-  border-style: none;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  background-color: #F6F6F6;
+  align-items: center;
+  list-style-type: none;
+  padding: 1.5rem 2rem;
+  flex-grow: 1;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  background-color: #F6F6F6;
+  border-radius: 1rem;
+}
+.section__fonctionnement li::before {
+  content: counter(steps);
+  counter-increment: steps;
+  color: white;
+  background-color: #9356DC;
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+  border-radius: 40%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .section__fonctionnement i {
   color: #7E7E7E;
-  margin-right: 20px;
+  margin-right: 1rem;
+  font-size: 1.5rem;
+
 }
 
 a {
