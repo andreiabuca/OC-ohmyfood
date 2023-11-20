@@ -10,20 +10,23 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Manrope&family=Roboto:wght@300;400;500;700;900&family=Shrikhand&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="sass/menus/homepage.css">
+    <link rel="stylesheet" href="sass/accueil/homepage.css">
     <link rel="stylesheet" href="sass/menus/menu-la-français.css">
     <link rel="stylesheet" href="sass/menus/menu-la-note.css">
     <link rel="stylesheet" href="sass/menus/menu-la-palette.css">
+    <link rel="stylesheet" href="sass/menus/menu-le-delice.css">
+    <link rel="stylesheet" href="sass/base.css">
     <link rel="stylesheet" href="sass/styles.css">
+
 </head>
 
 <body>
-    <div class="loading">
 
-    </div>
+    <div class="loader"></div>
+
     <header>
 
         <h1>ohmyfood</h1>
@@ -59,12 +62,9 @@
                     <img src="assets/la-palette.jpg" alt="Image du plat du restaurant">
                     <button>Nouveau</button>
 
-                    <div>
-                        <input type="checkbox" id="heartCheckbox">
-                        <i class="far fa-heart"></i>
-                    </div>
 
-                    <div>
+
+                    <div class="card__card-description">
                         <h3>La palette du goût</h3>
                         <p>Ménilmontant</p>
                     </div>
@@ -76,7 +76,7 @@
                     <img src="assets/la-note.jpg" alt="Image du plat du restaurant">
                     <button>Nouveau</button>
 
-                    <div>
+                    <div class="heart">
                         <i class="far fa-heart"></i>
                     </div>
 
@@ -90,7 +90,7 @@
                 <div class="div__card-content">
                     <img src="assets/la-française.jpg" alt="Image du plat du restaurant">
 
-                    <div>
+                    <div class="heart">
                         <i class="far fa-heart"></i>
                     </div>
 
@@ -105,7 +105,7 @@
                 <div class="div__card-content">
                     <img src="assets/le-delice.jpg" alt="Image du plat du restaurant">
 
-                    <div>
+                    <div class="heart">
                         <i class="far fa-heart"></i>
                     </div>
 

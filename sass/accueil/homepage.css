@@ -7,11 +7,11 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-header header {
+header {
   width: 100%;
   height: 70px;
 }
-header header h1 {
+header h1 {
   font-family: "Shrikhand", serif;
   display: flex;
   justify-content: center;
@@ -29,6 +29,7 @@ header header h1 {
   align-items: center;
   width: 95%;
   padding: 20px;
+  height: 50%;
 }
 .div__location i {
   margin-right: 15px;
@@ -80,7 +81,7 @@ header header h1 {
 
 .section__fonctionnement {
   width: 100%;
-  height: 400px;
+  height: 350px;
   padding-bottom: 35px;
   counter-reset: steps;
 }
@@ -188,11 +189,16 @@ a {
   transform: translateY(60%);
   right: 35px;
 }
-.div__card-content .far.fa-heart {
+.div__card-content .heart {
   font-size: 1.8rem;
   position: absolute;
   right: 40px;
   transform: translateY(57%);
+  overflow: hidden;
+}
+.div__card-content .heart:hover .fa-heart {
+  background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
+  transition: width 0.3s ease;
 }
 
 footer {

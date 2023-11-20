@@ -1,0 +1,30 @@
+// @use "homepage";
+// @use "menu-la-français";
+// @use "menu-la-note";
+// @use "menu-la-palette";
+// @use "menu-le-delice";
+// @use "utils/base";
+// @use "accueil/homepage";
+// @use "animations/animations";
+// @use "menus/base";
+// @use "menus/menu-la-français";
+// @use "menus/menu-la-note";
+// @use "menus/menu-la-palette";
+// @use "menus/menu-le-delice";
+// @use "utils/base";
+// @use "utils/colors";
+// @use "utils/mixins";
+// @use "utils/variables";
+// @use "styles.scss";
+
+@use "accueil/_homepage";
+@use "utils/_base";
+@use "utils/_colors";
+@use "utils/_mixins";
+@use "utils/_variables";
+@use "menus/menu-la-français";
+@use "menus/menu-la-note";
+@use "menus/menu-la-palette";
+@use "menus/menu-le-delice";
+
+
