@@ -7,11 +7,11 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-header header {
+header {
   width: 100%;
   height: 70px;
 }
-header header h1 {
+header h1 {
   font-family: "Shrikhand", serif;
   display: flex;
   justify-content: center;
@@ -27,9 +27,8 @@ header header h1 {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 95%;
-  padding: 20px;
-  height: 50%;
+  width: 100%;
+  height: 50px;
 }
 .div__location i {
   margin-right: 15px;
@@ -76,12 +75,12 @@ header header h1 {
 .section__reservez button:hover {
   transform: scale(1.01);
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
-  background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
+  background-image: linear-gradient(to bottom, #ff93e1, #a16be0);
 }
 
 .section__fonctionnement {
   width: 100%;
-  height: 400px;
+  height: 360px;
   padding-bottom: 35px;
   counter-reset: steps;
 }
@@ -165,96 +164,6 @@ a {
   border: 5px;
   object-fit: cover;
 }
-.div__card-content__card-description {
-  background-color: white;
-  border-radius: 2rem 2rem 0 0;
-}
-.div__card-content__card-description::before {
-  display: inline-block;
-  position: absolute;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 400;
-  content: "\f004";
-  font-size: 2rem;
-  height: 35rem;
-  top: 50%;
-  transform: translateY(-50%);
-  background-clip: text;
-  opacity: 1;
-  transition: all 200ms ease-in-out;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-}
-.div__card-content__card-description::after {
-  display: inline-block;
-  position: absolute;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "\f004";
-  font-size: 2rem;
-  height: 35rem;
-  top: 50%;
-  transform: translateY(-50%);
-  background-clip: text;
-  opacity: 0;
-  transition: all 200ms ease-in-out;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  background-image: linear-gradient(to top, rgb(147, 96, 220), rgb(255, 120, 210));
-}
-.div__card-content__card-description:hover::after {
-  opacity: 1;
-  transform: translateY(-50%) scale(1.1);
-}
-.div__card-content__card-description::before {
-  display: inline-block;
-  position: absolute;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 400;
-  content: "\f004";
-  font-size: 2rem;
-  right: 1rem;
-  top: 50%;
-  transform: translateY(-50%);
-  color: inherit;
-  background-clip: text;
-  opacity: 1;
-  transition: all 200ms ease-in-out;
-}
-.div__card-content__card-description::after {
-  display: inline-block;
-  position: absolute;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "\f004";
-  font-size: 2rem;
-  right: 1rem;
-  top: 50%;
-  transform: translateY(-50%);
-  color: inherit;
-  background-clip: text;
-  opacity: 0;
-  transition: all 200ms ease-in-out;
-  background-image: linear-gradient(to top, rgba(147, 96, 220, 0.9), rgba(255, 120, 210, 0.9));
-}
-.div__card-content__card-description:hover::after {
-  opacity: 1;
-  transform: translateY(-50%) scale(1);
-}
 .div__card-content h3 {
   margin-left: 15px;
   margin-top: 13px;
@@ -278,17 +187,6 @@ a {
   position: absolute;
   transform: translateY(60%);
   right: 35px;
-}
-.div__card-content .heart {
-  font-size: 1.8rem;
-  position: absolute;
-  right: 40px;
-  transform: translateY(57%);
-  overflow: hidden;
-}
-.div__card-content .heart:hover .fa-heart {
-  background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
-  transition: width 0.3s ease;
 }
 
 footer {
@@ -327,15 +225,22 @@ body {
 
 nav {
   display: flex;
+  flex-direction: row;
+  align-items: baseline;
 }
 
-h1 header {
+.div__logo {
   width: 100%;
   height: 70px;
+  height: 0;
 }
-h1 header h1 {
+.div__logo h1 {
   font-family: "Shrikhand", serif;
   display: flex;
   justify-content: center;
   padding-top: 10px;
+}
+
+.div__image img {
+  width: 100%;
 }/*# sourceMappingURL=styles.css.map */

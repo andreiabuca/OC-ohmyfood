@@ -1,5 +1,5 @@
-@use "../utils/colors";
 @use "../utils/mixins";
+@use "../utils/colors";
 @use "../utils/variables";
 
 * {
@@ -13,8 +13,21 @@ body {
 
 nav {
     display: flex;
+    flex-direction: row;
+    align-items: baseline;
 }
 
-h1 {
+.div__logo {
     @include mixins.logo;
+    height: 0;
+}
+
+.div__image {
+    img {
+        width: 100%;
+    }
+}
+
+main {
+    background-color: variables.$background-color;
 }
