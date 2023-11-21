@@ -1,75 +1,75 @@
-@use "../utils/_base";
-@use "../utils/_colors";
-@use "../utils/_mixins";
-@use "../utils/_variables";
-@use "../_styles";
+@use "../utils/mixins";
+@use "../utils/colors";
+@use "../utils/variables";
 
-// $background-color: #F6F6F6;
-// $primary-color-purple: #9356DC;
-// $secundary-color-pink: #FF79DA;
-// $tertiary-color-teal: #99E2D0;
-// $font-family: 'Roboto', sans-serif;
-// $text-grey: #353535;
 
-// @mixin button-style {
-//   border-radius: 39px;
-//   padding: 13px 23px;
-//   border-style: none;
-//   font-family: 'Roboto', sans-serif;
-//   color: white;
-//   font-weight: 500;
-//   margin-top: 30px;
-//   margin-left: 26%;
-//   background-image: linear-gradient(to bottom, $secundary-color-pink, $primary-color-purple);
-//   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-//   transition: transform 0.5s ease, box-shadow 0.3s ease;
-//   cursor: pointer;
+$background-color: #F6F6F6;
+$primary-color-purple: #9356DC;
+$secondary-color-pink: #FF79DA;
+$tertiary-color-teal: #99E2D0;
+$font-family: 'Roboto', sans-serif;
+$text-grey: #353535;
 
-// }
+@mixin button-style {
+  border-radius: 39px;
+  padding: 13px 23px;
+  border-style: none;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-weight: 500;
+  margin-top: 30px;
+  margin-left: 26%;
+  // background-image: linear-gradient(to bottom, $secondary-color-pink, $primary-color-purple);
+  background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+  cursor: pointer;
 
-// @mixin footer {
-//   background-color: $text-grey;
-//   width: 100%;
-//   height: 210px;
-//   color: white;
+}
 
-//   h2 {
-//     font-family: 'Shrikhand', serif;
-//     font-weight: 300;
-//     padding: 20px;
-//   }
+@mixin footer {
+  background-color: $text-grey;
+  width: 100%;
+  height: 210px;
+  color: white;
 
-//   span {
-//     font-weight: 600;
-//   }
+  h2 {
+    font-family: 'Shrikhand', serif;
+    font-weight: 300;
+    padding: 20px;
+  }
 
-//   p {
-//     margin-left: 20px;
-//     padding-bottom: 10px;
+  span {
+    font-weight: 600;
+  }
 
-//     i {
-//       margin-right: 12px;
-//     }
-//   }
+  p {
+    margin-left: 20px;
+    padding-bottom: 10px;
 
-//   a {
-//     color: inherit;
-//   }
-// }
+    i {
+      margin-right: 12px;
+    }
+  }
 
-// @mixin logo {
-//   header {
-//     width: 100%;
-//     height: 70px;
+  a {
+    color: inherit;
+  }
+}
 
-//     h1 {
-//       font-family: 'Shrikhand', serif;
-//       display: flex;
-//       justify-content: center;
-//       padding-top: 10px;
-//     }
-//   }
-// }
+@mixin logo {
+  header {
+    width: 100%;
+    height: 70px;
+
+    h1 {
+      font-family: 'Shrikhand', serif;
+      display: flex;
+      justify-content: center;
+      padding-top: 10px;
+    }
+  }
+}
 
 
 
@@ -84,6 +84,7 @@ body {
 
 header {
   @include mixins.logo;
+  
 }
 
 $breakpoint: 1024px;
@@ -142,7 +143,8 @@ $breakpoint: 1024px;
     &:hover {
       transform: scale(1.01);
       box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
-      background-image: linear-gradient(to bottom, lighten($secundary-color-pink, 5%), lighten($primary-color-purple, 5%));
+      background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
+      // background-image: linear-gradient(to bottom, lighten($secondary-color-pink, 5%), lighten($primary-color-purple, 5%));
     }
 
   }
@@ -286,7 +288,7 @@ a {
     background-clip: text;
     opacity: 0;
     transition: all 200ms ease-in-out;
-    background-image: linear-gradient(to top, rgba(147,96,220,$opacity), rgba(255,120,210,$opacity));
+    background-image: linear-gradient(to top, rgba(147,96,220,variables.$opacity), rgba(255,120,210,variables.$opacity));
   }
   &__card-description:hover::after {
     opacity: 1;
@@ -330,7 +332,8 @@ a {
     &:hover {
 
       .fa-heart {
-        background-image: linear-gradient(to bottom, $secundary-color-pink, $primary-color-purple);
+        // background-image: linear-gradient(to bottom, $secondary-color-pink, $primary-color-purple);
+        background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
         transition: width 0.3s ease;
       }
     }
