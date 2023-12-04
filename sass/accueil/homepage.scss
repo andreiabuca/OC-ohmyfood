@@ -5,23 +5,93 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
+
 
 body {
   font-family: variables.$font-family;
+}
+
+.loader {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: hsla(0, 0%, 100%, .9);
+  animation: loader .01s;
+  animation-delay: 1.75s;
+  animation-fill-mode: both;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .loader__itemContainer {
+    display: flex;
+    width: 5rem;
+    justify-content: space-between;
+
+    .loader__item {
+      height: 1rem;
+      width: 1rem;
+      border-radius: 1rem;
+      animation: jump 1s;
+      animation-iteration-count: 1;
+    }
+  }
+
+  .loader__item-1 {
+    background-color: #9356dc;
+  }
+
+  .loader__item-2 {
+    background-color: #ff79da;
+    animation-delay: .25s;
+  }
+
+  .loader__item-3 {
+    background-color: #99E2D0;
+    animation-delay: .55s;
+  }
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+
+  25% {
+    transform: translateY(0.5rem);
+  }
+
+  75% {
+    transform: translateY(-0.5rem);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes loader {
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
 }
 
 header {
   @include mixins.logo;
 }
 
-$breakpoint: 1024px;
 
 .div__location {
   background-color: #EAEAEA;
   color: variables.$text-grey;
-  border-top: 2px solid #EAEAEA; // work on the shadow
-  box-shadow: 0 -2px 5px rgba(0.0, 0.0, 0.0, 0.3); // work on the shadow
+  border-top: 2px solid #EAEAEA; 
+  box-shadow: 0 -2px 5px rgba(0.0, 0.0, 0.0, 0.3); 
   font-size: 11px;
   display: inline-flex;
   justify-content: center;
@@ -47,10 +117,21 @@ $breakpoint: 1024px;
   width: 100%;
   height: 265px;
 
+  @media (min-width: variables.$breakpoint-desktop) {
+    height: 200px;
+
+  }
+
   h2 {
     padding: 40px;
     font-weight: 700;
     text-align: center;
+  }
+
+  br {
+    @media (min-width: variables.$breakpoint-desktop) {
+      display: none;
+    }
   }
 
   p {
@@ -65,12 +146,14 @@ $breakpoint: 1024px;
   button {
     @include mixins.button-style;
 
-    // Animations
-
     &:hover {
       transform: scale(1.01);
       box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
       background-image: linear-gradient(to bottom, lighten(variables.$secondary-color-pink, 5%), lighten(variables.$primary-color-purple, 5%));
+    }
+
+    @media (min-width: variables.$breakpoint-desktop) {
+      margin-left: 42%;
     }
 
   }
@@ -79,21 +162,37 @@ $breakpoint: 1024px;
 
 .section__fonctionnement {
   width: 100%;
-  height: 360px;
-  padding-bottom: 35px;
+  height: 415px;
+  padding-bottom: 70px;
   counter-reset: steps;
+  background: white;
+  padding-top: 3px;
+
+  @media (min-width: variables.$breakpoint-desktop) {
+    height: 220px;
+  }
 
   h2 {
     margin-top: 40px;
     margin-left: 20px;
+
+    @media (min-width: variables.$breakpoint-desktop) {
+      margin-left: 8%;
+      margin-top: 22px;
+    }
   }
 
   ol {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    margin-top: 30px;
+    margin-top: 17px;
     margin-left: 9%;
+
+    @media (min-width: variables.$breakpoint-desktop) {
+      flex-direction: row;
+      width: 1024px;
+    }
   }
 
   li {
@@ -151,10 +250,25 @@ a {
   width: 100%;
   padding-bottom: 40px;
 
+  @media (min-width: variables.$breakpoint-desktop) {
+    height: 675px;
+  }
+
+  .div__cards {
+    @media (min-width: variables.$breakpoint-desktop) {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
   h2 {
-    padding-top: 40px;
-    margin-bottom: 20px;
+    padding-top: 20px;
+    margin-bottom: 27px;
     margin-left: 20px;
+
+    @media (min-width: variables.$breakpoint-desktop) {
+      margin-left: 67px;
+    }
   }
 }
 
@@ -166,6 +280,12 @@ a {
   border-radius: 20px;
   margin-bottom: 20px;
 
+  @media (min-width: variables.$breakpoint-desktop) {
+    width: 161%;
+    margin-left: -80%;
+    margin-bottom: 55px;
+  }
+
   img {
     width: 100%;
     height: 70%;
@@ -175,51 +295,50 @@ a {
     object-fit: cover;
   }
 
-  // &__card-description {
-  //   @include mixins.heart-animated;
-  // }
+  .div__card-text {
+    display: flex;
+    justify-content: space-between;
 
-  // &__card-description::before {
-  //   display: inline-block;
-  //   position: absolute;
-  //   font-style: normal;
-  //   font-variant: normal;
-  //   text-rendering: auto;
-  //   font-family: "Font Awesome 5 Free";
-  //   font-weight: 400;
-  //   content: "\f004";
-  //   font-size: 2rem;
-  //   right: 1rem;
-  //   top: 50%;
-  //   transform: translateY(-50%);
-  //   color: inherit;
-  //   background-clip: text;
-  //   opacity: 1;
-  //   transition: all 200ms ease-in-out;
-  // }
-  // &__card-description::after {
-  //   display: inline-block;
-  //   position: absolute;
-  //   font-style: normal;
-  //   font-variant: normal;
-  //   text-rendering: auto;
-  //   font-family: "Font Awesome 5 Free";
-  //   font-weight: 900;
-  //   content: "\f004";
-  //   font-size: 2rem;
-  //   right: 1rem;
-  //   top: 50%;
-  //   transform: translateY(-50%);
-  //   color: inherit;
-  //   background-clip: text;
-  //   opacity: 0;
-  //   transition: all 200ms ease-in-out;
-  //   background-image: linear-gradient(to top, rgba(147,96,220,variables.$opacity), rgba(255,120,210,variables.$opacity));
-  // }
-  // &__card-description:hover::after {
-  //   opacity: 1;
-  //   transform: translateY(-50%) scale(1);
-  // }
+    @media (min-width: variables.$breakpoint-desktop) {
+      margin-right: -30px;
+    }
+  }
+
+  .heart {
+    width: 15%;
+    position: relative;
+
+    & .fa-heart {
+      position: absolute;
+      bottom: 0;
+      top: 1rem;
+
+    }
+  }
+
+  .heart .empty {
+    z-index: 3;
+    font-size: 24px;
+    color: #353535;
+    background-color: #FFF;
+    opacity: 1;
+
+    &:hover {
+      opacity: 0;
+      transition: 200ms;
+    }
+
+  }
+
+  .heart .full {
+    z-index: 2;
+    font-size: 24px;
+    background: linear-gradient(variables.$primary-color-purple, variables.$secondary-color-pink);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
 
   h3 {
     margin-left: 15px;
@@ -245,27 +364,39 @@ a {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
     position: absolute;
     transform: translateY(60%);
-    right: 35px;
+    margin-left: -30%;
+
+    @media (min-width: variables.$breakpoint-desktop) {
+      margin-left: -9%;
+
+    }
   }
-
-  // .heart {
-  //   font-size: 1.8rem;
-  //   position: absolute;
-  //   right: 40px;
-  //   transform: translateY(57%);
-  //   overflow: hidden;
-
-  //   &:hover {
-
-  //     .fa-heart {
-  //       background-image: linear-gradient(to bottom, variables.$secondary-color-pink, variables.$primary-color-purple);
-  //       transition: width 0.3s ease;
-  //     }
-  //   }
-  // }
 
 }
 
+
 footer {
   @include mixins.footer;
+
+  @media (min-width: variables.$breakpoint-desktop) {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row-reverse;
+    height: 85px;
+  }
+
+  h2 {
+    @media (min-width: variables.$breakpoint-desktop) {
+      margin-right: 35px;
+      padding-bottom: 6px;
+    }
+  }
+
+  .div__position-desktop {
+    @media (min-width: variables.$breakpoint-desktop) {
+      display: flex;
+      align-items: flex-end;
+      margin-right: 20px;
+    }
+  }
 }

@@ -19,7 +19,13 @@
 
 <body>
 
-    <div class="loader"></div>
+    <div class="loader">
+        <div class="loader__itemContainer">
+            <div class="loader__item loader__item-1"></div>
+            <div class="loader__item loader__item-2"></div>
+            <div class="loader__item loader__item-3"></div>
+        </div>
+    </div>
 
     <header>
 
@@ -50,77 +56,108 @@
         </section>
 
         <section class="section__restaurants">
-            <h2>Restaurants</h2>
-            <a href="#">
-                <div class="div__card-content">
-                    <img src="assets/la-palette.jpg" alt="Image du plat du restaurant">
-                    <button>Nouveau</button>
+            <div class="div__restaurants-card">
+                <h2>Restaurants</h2>
+
+                <div class="div__cards">
+                    <a href="./restaurants/menu-la-palette.html">
+                        <div class="div__card-content">
+                            <img src="assets/la-palette.jpg" alt="Image du plat du restaurant">
+                            <button>Nouveau</button>
 
 
+                            <div class="div__card-text">
+                                <div>
+                                    <h3>La palette du goût</h3>
+                                    <p>Ménilmontant</p>
+                                </div>
+                    </a>
+                    <div class="heart">
+                        <i class="fa-regular fa-heart empty"></i>
+                        <i class="fa-solid fa-heart full"></i>
 
-                    <div class="card__card-description">
-                        <h3>La palette du goût</h3>
-                        <p>Ménilmontant</p>
                     </div>
-
                 </div>
-            </a>
-            <a href="#">
+
+            </div>
+
+            <a href="./restaurants/menu-la-note.html">
                 <div class="div__card-content">
                     <img src="assets/la-note.jpg" alt="Image du plat du restaurant">
                     <button>Nouveau</button>
 
-                    <!-- <div class="heart">
-                        <i class="far fa-heart"></i>
-                    </div> -->
-
-                    <div>
-                        <h3>La note enchantée</h3>
-                        <p>Charonne</p>
-                    </div>
-                </div>
+                    <div class="div__card-text">
+                        <div>
+                            <h3>La note enchantée</h3>
+                            <p>Charonne</p>
+                        </div>
             </a>
-            <a href="#">
+
+            <div class="heart">
+                <i class="fa-regular fa-heart empty"></i>
+                <i class="fa-solid fa-heart full"></i>
+
+            </div>
+            </div>
+            </div>
+
+            <a href="./restaurants/menu-la-français.html">
                 <div class="div__card-content">
                     <img src="assets/la-française.jpg" alt="Image du plat du restaurant">
 
-                    <!-- <div class="heart">
-                        <i class="far fa-heart"></i>
-                    </div> -->
-
-
-                    <div>
-                        <h3>À la française</h3>
-                        <p>Cité Rouge</p>
-                    </div>
-                </div>
+                    <div class="div__card-text">
+                        <div>
+                            <h3>À la française</h3>
+                            <p>Cité Rouge</p>
+                        </div>
             </a>
-            <a href="#">
+            <div class="heart">
+                <i class="fa-regular fa-heart empty"></i>
+                <i class="fa-solid fa-heart full"></i>
+
+            </div>
+            </div>
+            </div>
+
+            <a href="./restaurants/menu-le-delice.html">
                 <div class="div__card-content">
                     <img src="assets/le-delice.jpg" alt="Image du plat du restaurant">
 
-                    <!-- <div class="heart">
-                        <i class="far fa-heart"></i>
-                    </div> -->
-
-                    <div>
-                        <h3>Le délice des sens</h3>
-                        <p>Folie-Méricourt</p>
-                    </div>
-
-                </div>
+                    <div class="div__card-text">
+                        <div>
+                            <h3>Le délice des sens</h3>
+                            <p>Folie-Méricourt</p>
+                        </div>
             </a>
+            <div class="heart">
+                <i class="fa-regular fa-heart empty"></i>
+                <i class="fa-solid fa-heart full"></i>
+
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
         </section>
     </main>
 
     <footer>
         <h2>ohmyfood</h2>
-        <p><i class="fas fa-utensils"></i><span>Proposer un restaurant</span></p>
-        <p><i class="fas fa-handshake-angle"></i><span>Devenir partenaire</span></p>
-        <p>Mentions légales</p>
-        <a href="mailto:ohmyfood@gmail.com">
-            <p>Contact</p>
-        </a>
+
+        <div class="div__position-desktop">
+            <div class="div__position-desktop">
+                <p><i class="fas fa-utensils"></i><span>Proposer un restaurant</span></p>
+                <p><i class="fas fa-handshake-angle"></i><span>Devenir partenaire</span></p>
+            </div>
+
+            <div class="div__position-desktop">
+                <p>Mentions légales</p>
+                <a href="mailto:ohmyfood@gmail.com">
+                    <p>Contact</p>
+                </a>
+            </div>
+        </div>
     </footer>
 </body>
 
