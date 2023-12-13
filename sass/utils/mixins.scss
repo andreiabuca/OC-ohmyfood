@@ -14,56 +14,6 @@
       }
     }
 
-// @mixin gradient ($opacity:0.9) {
-//     background-image: linear-gradient(to top, rgba(147,96,220,$opacity), rgba(255,120,210,$opacity));
-// }
-
-// @mixin font-awesome ($font-weight:400) {
-//     display: inline-block;
-//     position: absolute;
-//     font-style: normal;
-//     font-variant: normal;
-//     text-rendering: auto;
-//     font-family: "Font Awesome 5 Free";
-//     font-weight: $font-weight;
-
-// }
-
-// @mixin heart ($opacity:1, $font-weight:400, $color: inherit) {
-//     @include font-awesome($font-weight);
-//     content: "\f004";
-//     font-size: 2rem;
-//     height: 35rem;
-//     top: 50%;
-//     transform: translateY(-50%);
-//     // color: colors.$color;
-//     background-clip: text;
-//     opacity: $opacity;
-//     transition: all 200ms ease-in-out; 
-//     display: flex;
-//     justify-content: flex-end;
-//     align-items: flex-end;
-// }
-
-// @mixin heart-animated {
-//     background-color: white;
-//     border-radius: 2rem 2rem 0 0;
-//     &::before {
-//         @include heart 
-//     }
-//     &::after {
-//         @include heart($opacity:0,$font-weight:900,$color:transparent);
-//         @include gradient(1)
-
-//     }
-//     &:hover::after {
-//         opacity: 1;
-//         transform: translateY(-50%) scale(1.1);
-//     }
-// }
-
-// Main button
-
 @mixin button-style {
     border-radius: 39px;
     padding: 13px 23px;
