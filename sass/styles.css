@@ -70,19 +70,21 @@ body {
 header {
   width: 100%;
   height: 70px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.26);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 header h1 {
   font-family: "Shrikhand", serif;
-  display: flex;
-  justify-content: center;
-  padding-top: 10px;
+  margin: 0;
 }
 
 .div__location {
   background-color: #EAEAEA;
   color: #353535;
   border-top: 2px solid #EAEAEA;
-  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
   font-size: 11px;
   display: inline-flex;
   justify-content: center;
@@ -105,7 +107,7 @@ header h1 {
   width: 100%;
   height: 265px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1240px) {
   .section__reservez {
     height: 200px;
   }
@@ -115,7 +117,7 @@ header h1 {
   font-weight: 700;
   text-align: center;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1240px) {
   .section__reservez br {
     display: none;
   }
@@ -141,13 +143,17 @@ header h1 {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
   transition: transform 0.5s ease, box-shadow 0.3s ease;
   cursor: pointer;
+  display: flex;
+  text-align: center;
+  margin: auto;
+  margin-top: 30px;
 }
 .section__reservez button:hover {
   transform: scale(1.01);
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
   background-image: linear-gradient(to bottom, #ff93e1, #a16be0);
 }
-@media (min-width: 1024px) {
+@media (min-width: 1240px) {
   .section__reservez button {
     margin-left: 42%;
   }
@@ -161,7 +167,7 @@ header h1 {
   background: white;
   padding-top: 3px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1240px) {
   .section__fonctionnement {
     height: 220px;
   }
@@ -170,7 +176,17 @@ header h1 {
   margin-top: 40px;
   margin-left: 20px;
 }
+@media (min-width: 767px) {
+  .section__fonctionnement h2 {
+    margin-left: 50px;
+  }
+}
 @media (min-width: 1024px) {
+  .section__fonctionnement h2 {
+    margin-left: 74px;
+  }
+}
+@media (min-width: 1240px) {
   .section__fonctionnement h2 {
     margin-left: 8%;
     margin-top: 22px;
@@ -179,11 +195,14 @@ header h1 {
 .section__fonctionnement ol {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 2rem;
   margin-top: 17px;
-  margin-left: 9%;
+  margin-left: auto;
+  margin-right: auto;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1240px) {
   .section__fonctionnement ol {
     flex-direction: row;
     width: 1024px;
@@ -220,6 +239,21 @@ header h1 {
   transform: translateY(8%);
   left: -5%;
 }
+@media (min-width: 767px) {
+  .section__fonctionnement li::before {
+    left: -3%;
+  }
+}
+@media (min-width: 1024px) {
+  .section__fonctionnement li::before {
+    left: -2%;
+  }
+}
+@media (min-width: 1240px) {
+  .section__fonctionnement li::before {
+    left: -4%;
+  }
+}
 .section__fonctionnement i {
   color: #7E7E7E;
   margin-left: 15px;
@@ -241,12 +275,12 @@ a {
   margin-bottom: 27px;
   margin-left: 20px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1240px) {
   .section__restaurants h2 {
     margin-left: 107px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1240px) {
   .section__restaurants .section__restaurants-card {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -262,6 +296,7 @@ a {
   margin-left: 20px;
   border-radius: 20px;
   margin-bottom: 20px;
+  position: relative;
 }
 .div__card-content img {
   width: 100%;
@@ -287,9 +322,19 @@ a {
   margin-left: 60%;
   margin-top: -11rem;
 }
+@media (min-width: 767px) {
+  .div__card-content .nouveau-button {
+    margin-left: 82%;
+  }
+}
 @media (min-width: 1024px) {
   .div__card-content .nouveau-button {
-    margin-left: 23rem;
+    margin-left: 85%;
+  }
+}
+@media (min-width: 1240px) {
+  .div__card-content .nouveau-button {
+    margin-left: 22rem;
     margin-top: -11rem;
   }
 }
@@ -316,9 +361,19 @@ a {
   top: -40px;
   left: 19rem;
 }
+@media (min-width: 767px) {
+  .div__card-content .heart .fa-heart {
+    margin-left: 20rem;
+  }
+}
 @media (min-width: 1024px) {
   .div__card-content .heart .fa-heart {
-    left: 28rem;
+    margin-left: 36rem;
+  }
+}
+@media (min-width: 1240px) {
+  .div__card-content .heart .fa-heart {
+    left: -9rem;
   }
 }
 .div__card-content .heart .empty {
@@ -365,7 +420,7 @@ footer p i {
 footer a {
   color: inherit;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1240px) {
   footer {
     display: flex;
     align-items: flex-end;
@@ -373,13 +428,13 @@ footer a {
     height: 85px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1240px) {
   footer h2 {
     margin-right: 35px;
     padding-bottom: 6px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1240px) {
   footer .div__position-desktop {
     display: flex;
     align-items: flex-end;
@@ -406,7 +461,7 @@ body {
   width: 100%;
   font-family: "Shrikhand", serif;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1240px) {
   .nav-bar {
     justify-content: space-between;
     padding: 21px 0px 5px 0px;
@@ -416,7 +471,7 @@ body {
 .nav-bar h1 {
   font-size: 25px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1240px) {
   .nav-bar h1 {
     margin-left: -43rem;
   }
@@ -428,7 +483,7 @@ body {
   max-height: 18rem;
   object-fit: cover;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1240px) {
   .div__image img {
     max-height: 32rem;
   }
@@ -441,7 +496,7 @@ body {
   z-index: 1;
   margin-top: -4rem;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1240px) {
   .main-container {
     max-width: 70%;
     margin-left: auto;
@@ -455,7 +510,7 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1240px) {
   .main-container .position {
     justify-content: center;
     margin-left: 60px;
@@ -497,7 +552,7 @@ body {
   overflow: hidden;
   padding: 0 1rem;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1240px) {
   .main-container .section__menu-cards {
     max-width: 70%;
     margin-left: auto;
@@ -519,7 +574,7 @@ body {
   height: 3px;
   background-color: #99E2D0;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1240px) {
   .main-container .section__menu-cards .menu-title::after {
     width: 7%;
   }
@@ -638,7 +693,7 @@ body {
   width: 40%;
   transition: cursor;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1240px) {
   .main-container .div__btn-commander button {
     margin-left: 39%;
     width: 21%;
