@@ -190,12 +190,12 @@ header {
     margin-top: 40px;
     margin-left: 20px;
 
-    @media (min-width: variables.$breakpoint-tablet-767) {
-      margin-left: 50px;
+    @media (min-width: variables.$breakpoint-tablet) {
+      margin-left: 57px;
     }
 
-    @media (min-width: variables.$breakpoint-tablet-1024) {
-      margin-left: 74px;
+    @media (min-width: variables.$breakpoint-desktop-1024) {
+      margin-left: 69px;
     }
 
     @media (min-width: variables.$breakpoint-desktop) {
@@ -214,8 +214,13 @@ header {
     margin-left: auto;
     margin-right: auto;
 
-
     @media (min-width: variables.$breakpoint-desktop) {
+      flex-direction: row;
+      width: 1024px;
+      margin: 0;
+      margin-left: 9%;
+      margin-top: 2%;
+      gap: 3%;
       flex-direction: row;
       width: 1024px;
     }
@@ -256,11 +261,11 @@ header {
     transform: translateY(8%);
     left: -5%;
 
-    @media (min-width: variables.$breakpoint-tablet-767) {
-      left: -3%;
+    @media (min-width: variables.$breakpoint-tablet) {
+      left: -2%;
     }
 
-    @media (min-width: variables.$breakpoint-tablet-1024) {
+    @media (min-width: variables.$breakpoint-desktop-1024) {
       left: -2%;
     }
 
@@ -269,8 +274,6 @@ header {
     }
 
   }
-
-
 
   i {
     color: #7E7E7E;
@@ -345,18 +348,25 @@ a {
     margin-left: 60%;
     margin-top: -11rem;
 
-    @media (min-width: variables.$breakpoint-tablet-767) {
+    @media (min-width: variables.$breakpoint-mobile-425) {
+      margin-left: 66%;
+    }
+
+    @media (min-width: variables.$breakpoint-tablet) {
       margin-left: 82%;
     }
-    
-    @media (min-width: variables.$breakpoint-tablet-1024) {
+
+    @media (min-width: variables.$breakpoint-desktop-1024) {
       margin-left: 85%;
     }
 
     @media (min-width: variables.$breakpoint-desktop) {
       margin-left: 22rem;
       margin-top: -11rem;
+    }
 
+    @media (min-width: variables.$breakpoint-desktop-1440) {
+      margin-left: 27rem;
     }
   }
 
@@ -386,16 +396,24 @@ a {
       top: -40px;
       left: 19rem;
 
-      @media (min-width: variables.$breakpoint-tablet-767) {
-        margin-left: 20rem;
+      @media (min-width: variables.$breakpoint-mobile-425) {
+        left: 21rem;
       }
 
-      @media (min-width: variables.$breakpoint-tablet-1024) {
-        margin-left: 36rem;
+      @media (min-width: variables.$breakpoint-tablet) {
+        left: 40rem;
+      }
+
+      @media (min-width: variables.$breakpoint-desktop-1024) {
+        left: 54rem;
       }
 
       @media (min-width: variables.$breakpoint-desktop) {
-        left: -9rem;
+        left: 27rem;
+      }
+
+      @media (min-width: variables.$breakpoint-desktop-1440) {
+        left: 32rem;
       }
     }
   }

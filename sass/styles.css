@@ -176,14 +176,14 @@ header h1 {
   margin-top: 40px;
   margin-left: 20px;
 }
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .section__fonctionnement h2 {
-    margin-left: 50px;
+    margin-left: 57px;
   }
 }
 @media (min-width: 1024px) {
   .section__fonctionnement h2 {
-    margin-left: 74px;
+    margin-left: 69px;
   }
 }
 @media (min-width: 1240px) {
@@ -204,6 +204,12 @@ header h1 {
 }
 @media (min-width: 1240px) {
   .section__fonctionnement ol {
+    flex-direction: row;
+    width: 1024px;
+    margin: 0;
+    margin-left: 9%;
+    margin-top: 2%;
+    gap: 3%;
     flex-direction: row;
     width: 1024px;
   }
@@ -239,9 +245,9 @@ header h1 {
   transform: translateY(8%);
   left: -5%;
 }
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .section__fonctionnement li::before {
-    left: -3%;
+    left: -2%;
   }
 }
 @media (min-width: 1024px) {
@@ -322,7 +328,12 @@ a {
   margin-left: 60%;
   margin-top: -11rem;
 }
-@media (min-width: 767px) {
+@media (min-width: 425px) {
+  .div__card-content .nouveau-button {
+    margin-left: 66%;
+  }
+}
+@media (min-width: 768px) {
   .div__card-content .nouveau-button {
     margin-left: 82%;
   }
@@ -336,6 +347,11 @@ a {
   .div__card-content .nouveau-button {
     margin-left: 22rem;
     margin-top: -11rem;
+  }
+}
+@media (min-width: 1440px) {
+  .div__card-content .nouveau-button {
+    margin-left: 27rem;
   }
 }
 .div__card-content .div__card-text {
@@ -361,19 +377,29 @@ a {
   top: -40px;
   left: 19rem;
 }
-@media (min-width: 767px) {
+@media (min-width: 425px) {
   .div__card-content .heart .fa-heart {
-    margin-left: 20rem;
+    left: 21rem;
+  }
+}
+@media (min-width: 768px) {
+  .div__card-content .heart .fa-heart {
+    left: 40rem;
   }
 }
 @media (min-width: 1024px) {
   .div__card-content .heart .fa-heart {
-    margin-left: 36rem;
+    left: 54rem;
   }
 }
 @media (min-width: 1240px) {
   .div__card-content .heart .fa-heart {
-    left: -9rem;
+    left: 27rem;
+  }
+}
+@media (min-width: 1440px) {
+  .div__card-content .heart .fa-heart {
+    left: 32rem;
   }
 }
 .div__card-content .heart .empty {
