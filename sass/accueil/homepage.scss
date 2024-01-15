@@ -188,19 +188,18 @@ header {
 
   h2 {
     margin-top: 40px;
-    margin-left: 20px;
+    margin-left: 5%;
 
-    @media (min-width: variables.$breakpoint-tablet) {
-      margin-left: 57px;
-    }
+    // @media (min-width: variables.$breakpoint-tablet) {
+    //   margin-left: 57px;
+    // }
 
-    @media (min-width: variables.$breakpoint-desktop-1024) {
-      margin-left: 69px;
-    }
+    // @media (min-width: variables.$breakpoint-desktop-1024) {
+    //   margin-left: 69px;
+    // }
 
     @media (min-width: variables.$breakpoint-desktop) {
       margin-left: 8%;
-      margin-top: 22px;
     }
   }
 
@@ -211,7 +210,8 @@ header {
     align-items: center;
     gap: 2rem;
     margin-top: 17px;
-    margin-left: auto;
+    // margin-left: auto;
+    margin-left: -2%;
     margin-right: auto;
 
     @media (min-width: variables.$breakpoint-desktop) {
@@ -225,7 +225,7 @@ header {
       width: 1024px;
     }
 
-    
+
   }
 
   li {
@@ -253,25 +253,28 @@ header {
     background-color: variables.$primary-color-purple;
     width: 1.7rem;
     height: 1.7rem;
-    display: grid;
+    // display: grid;
     place-items: center;
     border-radius: 50%;
-    position: absolute;
-    top: 31%;
-    transform: translateY(8%);
-    left: -5%;
+    // position: absolute;
+    // top: 31%;
+    // transform: translateY(8%);
+    // left: -5%;
+    display: flex;
+    justify-content: center;
+    margin-left: -28px;
 
-    @media (min-width: variables.$breakpoint-tablet) {
-      left: -2%;
-    }
+    // @media (min-width: variables.$breakpoint-tablet) {
+    //   left: -2%;
+    // }
 
-    @media (min-width: variables.$breakpoint-desktop-1024) {
-      left: -2%;
-    }
+    // @media (min-width: variables.$breakpoint-desktop-1024) {
+    //   left: -2%;
+    // }
 
-    @media (min-width: variables.$breakpoint-desktop) {
-      left: -4%;
-    }
+    // @media (min-width: variables.$breakpoint-desktop) {
+    //   left: -4%;
+    // }
 
   }
 
@@ -333,41 +336,69 @@ a {
   }
 
   .nouveau-button {
-    border: 1px solid variables.$tertiary-color-teal;
-    background-color: variables.$tertiary-color-teal;
-    padding: 7px 15px;
-    border-style: none;
-    border-radius: 4%;
-    font-family: variables.$font-family;
-    color: #008766;
-    font-weight: 500;
-    font-size: 17px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-    position: absolute;
-    transform: translateY(60%);
+    // border: 1px solid variables.$tertiary-color-teal;
+    // background-color: variables.$tertiary-color-teal;
+    // padding: 7px 15px;
+    // border-style: none;
+    // border-radius: 4%;
+    // font-family: variables.$font-family;
+    // color: #008766;
+    // font-weight: 500;
+    // font-size: 17px;
+    // box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    // position: absolute;
+    // transform: translateY(60%);
     margin-left: 60%;
     margin-top: -11rem;
+    float: right;
+    margin-right: 8px;
 
-    @media (min-width: variables.$breakpoint-mobile-425) {
-      margin-left: 66%;
-    }
+    // @media (min-width: variables.$breakpoint-mobile-425) {
+    //   margin-left: 66%;
+    // }
 
-    @media (min-width: variables.$breakpoint-tablet) {
-      margin-left: 82%;
-    }
+    // @media (min-width: variables.$breakpoint-tablet) {
+    //   margin-left: 82%;
+    // }
 
-    @media (min-width: variables.$breakpoint-desktop-1024) {
-      margin-left: 85%;
-    }
+    // @media (min-width: variables.$breakpoint-desktop-1024) {
+    //   margin-left: 85%;
+    // }
 
-    @media (min-width: variables.$breakpoint-desktop) {
-      margin-left: 22rem;
-      margin-top: -11rem;
-    }
+    // @media (min-width: variables.$breakpoint-desktop) {
+    //   margin-left: 22rem;
+    //   margin-top: -11rem;
+    // }
 
-    @media (min-width: variables.$breakpoint-desktop-1440) {
-      margin-left: 27rem;
+    // @media (min-width: variables.$breakpoint-desktop-1440) {
+    //   margin-left: 27rem;
+    // }
+
+    .btn-nouveau {
+      // border: 1px solid variables.$tertiary-color-teal;
+      background-color: variables.$tertiary-color-teal;
+      padding: 7px 15px;
+      // border-style: none;
+      border-radius: 4%;
+      font-family: variables.$font-family;
+      color: #008766;
+      font-weight: 500;
+      font-size: 17px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+      // position: absolute;
+      transform: translateY(60%);
+      justify-content: center;
+      display: flex;
+      width: 80%;
+
     }
+  }
+
+  .card-description {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .div__card-text {
@@ -387,35 +418,37 @@ a {
   }
 
   .heart {
-    width: 15%;
-    position: relative;
+    width: 11%;
+    // position: relative;
+    display: block;
+    height: 20px;
 
-    & .fa-heart {
-      position: absolute;
-      bottom: 0;
-      top: -40px;
-      left: 19rem;
+    // & .fa-heart {
+    //   position: absolute;
+    //   bottom: 0;
+    //   top: -40px;
+    //   left: 19rem;
 
-      @media (min-width: variables.$breakpoint-mobile-425) {
-        left: 21rem;
-      }
+    //   @media (min-width: variables.$breakpoint-mobile-425) {
+    //     left: 21rem;
+    //   }
 
-      @media (min-width: variables.$breakpoint-tablet) {
-        left: 40rem;
-      }
+    //   @media (min-width: variables.$breakpoint-tablet) {
+    //     left: 40rem;
+    //   }
 
-      @media (min-width: variables.$breakpoint-desktop-1024) {
-        left: 54rem;
-      }
+    //   @media (min-width: variables.$breakpoint-desktop-1024) {
+    //     left: 54rem;
+    //   }
 
-      @media (min-width: variables.$breakpoint-desktop) {
-        left: 27rem;
-      }
+    //   @media (min-width: variables.$breakpoint-desktop) {
+    //     left: 27rem;
+    //   }
 
-      @media (min-width: variables.$breakpoint-desktop-1440) {
-        left: 32rem;
-      }
-    }
+    //   @media (min-width: variables.$breakpoint-desktop-1440) {
+    //     left: 32rem;
+    //   }
+    // }
   }
 
   .heart .empty {
@@ -424,10 +457,13 @@ a {
     color: variables.$text-grey;
     background-color: variables.$menu-cards-white;
     opacity: 1;
+    height: 20px;
+    position: absolute;
 
     &:hover {
       opacity: 0;
       transition: 200ms;
+      z-index: 1;
     }
   }
 
@@ -438,6 +474,7 @@ a {
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+    position: absolute;
   }
 
 }

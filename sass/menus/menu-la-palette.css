@@ -7,30 +7,9 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.nav-bar {
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
-  justify-content: space-evenly;
-  padding: 10px 0px 5px 0px;
-  margin-left: -42px;
-  width: 100%;
-  font-family: "Shrikhand", serif;
-}
-@media (min-width: 1240px) {
-  .nav-bar {
-    justify-content: space-between;
-    padding: 21px 0px 5px 0px;
-    margin-left: 13px;
-  }
-}
-.nav-bar h1 {
-  font-size: 25px;
-}
-@media (min-width: 1240px) {
-  .nav-bar h1 {
-    margin-left: -43rem;
-  }
+.header-arrow {
+  position: absolute;
+  left: 25px;
 }
 
 .div__image img {

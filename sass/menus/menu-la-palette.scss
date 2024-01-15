@@ -11,30 +11,36 @@ body {
     font-family: variables.$font-family;
 }
 
-.nav-bar {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    justify-content: space-evenly;
-    padding: 10px 0px 5px 0px;
-    margin-left: -42px;
-    width: 100%;
-    font-family: variables.$font-titles;
+// .nav-bar {
+//     display: flex;
+//     flex-direction: row;
+//     align-items: baseline;
+//     justify-content: space-evenly;
+//     padding: 10px 0px 5px 0px;
+//     margin-left: -42px;
+//     width: 100%;
+//     font-family: variables.$font-titles;
 
-    @media (min-width: variables.$breakpoint-desktop) {
-        justify-content: space-between;
-        padding: 21px 0px 5px 0px;
-        margin-left: 13px;
-    }
+//     @media (min-width: variables.$breakpoint-desktop) {
+//         justify-content: space-between;
+//         padding: 21px 0px 5px 0px;
+//         margin-left: 13px;
+//     }
 
-    h1 {
-        font-size: 25px;
+//     h1 {
+//         font-size: 25px;
 
-        @media (min-width: variables.$breakpoint-desktop) {
-            margin-left: -43rem;
-        }
-    }
+//         @media (min-width: variables.$breakpoint-desktop) {
+//             margin-left: -43rem;
+//         }
+//     }
+// }
+
+.header-arrow {
+    position: absolute;
+    left: 25px;
 }
+
 
 .div__image {
     img {
